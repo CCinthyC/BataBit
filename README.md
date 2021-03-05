@@ -1,0 +1,2 @@
+# BataBit
+Bitcoin responsive website
