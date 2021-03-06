@@ -1,21 +1,40 @@
-/* Los HTML tags tienen menor relevancia en la especificidad que las clases. Por esto no reconocia el cambio. Voy a comentar los <h> y reemplazo por una clase con mas especificidad*/
-
-/* h1, h2{
-  font-size: 4rem;
-} */
-
-.header--title-container h1 {
-  font-size: 4rem;
-  line-height: 4.6rem;
+header{
+  height: 380px;  
 }
 
-body {
-  font-size: 16px;
+.header--title-container { 
+  width: 80%;
+  margin-top: 48px;
+  margin-bottom: 70px;
+}
+
+.header--title-container .header--button {
+  top: 355px;
+}
+
+.header--title-container h1,
+.main-exchange-container--title h2,
+.product-detail--title h2,
+.bitcoin-img-container h2,
+.plans--title h2
+{
+  font-size: 4rem;
+  line-height: 4.2rem;
+}
+
+.header--title-container p,
+.main-exchange-container--title p,
+.product-detail--title p,
+.plans--title p
+{ 
+  font-size: 1.8rem;
+  line-height: 2.2rem;
 }
 
 .main-tables-container {
   max-width: 700px;
   margin: 0 auto;
+  margin-top: 48px;
   overflow-x: hidden;
 }
 
@@ -24,6 +43,10 @@ body {
   flex-wrap: wrap;
   max-width: 900px;
   margin: 0 auto;
+}
+
+.bitcoin-img-container{
+  background-image: url('../assets/imgs/bitcoinbaby-large.jpg');
 }
 
 .plans-container--slider {
