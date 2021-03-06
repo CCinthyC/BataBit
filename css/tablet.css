@@ -1,31 +1,36 @@
-h1, h2{
+/* Los HTML tags tienen menor relevancia en la especificidad que las clases. Por esto no reconocia el cambio. Voy a comentar los <h> y reemplazo por una clase con mas especificidad*/
+
+/* h1, h2{
   font-size: 4rem;
+} */
+
+.header--title-container h1 {
+  font-size: 4rem;
+  line-height: 4.6rem;
 }
 
 body {
   font-size: 16px;
 }
 
-
-.main-tables-container{
+.main-tables-container {
   max-width: 700px;
   margin: 0 auto;
   overflow-x: hidden;
 }
 
-.product-cards--container{
+.product-cards--container {
   display: flex;
   flex-wrap: wrap;
   max-width: 900px;
   margin: 0 auto;
 }
 
-.plans-container--slider{
+.plans-container--slider {
   justify-content: center;
 }
 
 .slider-arrow-left,
-.slider-arrow-right
-{
+.slider-arrow-right {
   display: none;
 }
